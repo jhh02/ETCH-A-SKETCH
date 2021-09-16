@@ -10,18 +10,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
- 
 }
 
 .container {
   display: grid;
   justify-content: center;
-  grid-template: repeat(16, 24px) / repeat(16, 24px);
-  width: 100%;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  border: solid 1px black;
+  width: 500px;
+  height: 500px;
 }
 
 .square {
-  background-color: whitk;
-  border: solid 1px black;
-  width: 100%;
+  background-color: white;
+  border: none;
 }
