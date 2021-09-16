@@ -15,13 +15,13 @@ function makeBoard(pixel) {
   }
 }
 
-function askUser() {
+function askUserPixel() {
   let pixelSize = +window.prompt("Enter grid size between 1 - 64", 64);
   if (pixelSize > 64 || pixelSize < 0) {
     return;
   }
   deletePixel();
-  makeBoard(pixelSize * pixelSize);
+  makeBoard(pixelSize);
   container.style.gridTemplate = `repeat(${pixelSize}, 1fr) / repeat(${pixelSize}, 1fr)`;
   squares = document.querySelectorAll(".square");
   squares.forEach((square) =>
@@ -30,7 +30,7 @@ function askUser() {
 }
 
 function reset() {
-  askUser();
+  askUserPixel();
   squares.forEach((square) => (square.style.backgroundColor = "white"));
 }
 
