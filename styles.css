@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(16, 24px) / repeat(16, 24px);
+  width: 100%;
+}
+
+.square {
+  background-color: whitk;
+  border: solid 1px black;
+  width: 100%;
+}
